@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantik - Einführung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header, nav, main, section, article, aside, footer {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #eee;
+        }
+        aside {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Bereich -->
+    <header>
+        <h1>Willkommen zur HTML-Semantik!</h1>
+        <p>In diesem Beispiel lernen wir die Bedeutung und Nutzung von semantischen HTML-Elementen.</p>
+    </header>
+
+    <!-- Navigation Bereich -->
+    <nav>
+        <ul>
+            <li><a href="#main">Zum Hauptinhalt</a></li>
+            <li><a href="#article">Artikel anzeigen</a></li>
+            <li><a href="#aside">Zusätzliche Informationen</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <main id="main">
+        <h2>Hauptinhalt der Seite</h2>
+        <p>Das <code>&lt;main&gt;</code>-Element enthält den Hauptinhalt der Seite. Es sollte nur einmal auf einer Seite verwendet werden und der wichtigste Teil des Inhalts sein.</p>
+
+        <!-- Sektion mit Artikeln -->
+        <section>
+            <h3>Eine Sektion der Webseite</h3>
+            <p>Das <code>&lt;section&gt;</code>-Element teilt den Inhalt in thematische Gruppen. Es wird oft für verschiedene Themenbereiche innerhalb des Hauptinhalts verwendet.</p>
+
+            <!-- Artikel innerhalb einer Sektion -->
+            <article id="article">
+                <h4>Ein Artikel innerhalb der Sektion</h4>
+                <p>Das <code>&lt;article&gt;</code>-Element wird verwendet, um einen in sich abgeschlossenen Teil des Inhalts zu definieren, der eigenständig sein könnte, wie z. B. ein Blogbeitrag, ein Nachrichtenartikel oder ein Foreneintrag.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Zusatzinformationen (Aside) -->
+    <aside id="aside">
+        <h3>Zusätzliche Informationen</h3>
+        <p>Das <code>&lt;aside&gt;</code>-Element enthält Inhalte, die mit dem Hauptinhalt in Verbindung stehen, aber nicht direkt dazu gehören. Es wird oft für Seitenleisten oder zusätzliche Hinweise verwendet.</p>
+    </aside>
+
+    <!-- Footer Bereich -->
+    <footer>
+        <p>© 2024 Jens Reiner</p>
+        <p>Das <code>&lt;footer&gt;</code>-Element wird verwendet, um den Footer der Seite zu definieren. Es enthält normalerweise Urheberrechtshinweise, Links zum Impressum oder Kontaktinformationen.</p>
+    </footer>
+
+</body>
+</html>
