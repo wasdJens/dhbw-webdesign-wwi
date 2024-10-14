@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Fragments und Anker</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #4caf50;
+        padding: 10px;
+        color: white;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 20px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #4caf50;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        margin-top: 50px;
+      }
+
+      section h2 {
+        margin-top: 50px;
+      }
+
+      footer {
+        background-color: #4caf50;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Document Fragments und Anker in HTML</h1>
+      <p>Klicke auf einen Abschnitt, um dorthin zu springen</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#section1">Was sind Document Fragments?</a></li>
+        <li><a href="#section2">Verwendung von Ankern</a></li>
+        <li><a href="#section3">Beispiel: Document Fragments</a></li>
+        <li><a href="#section4">Zusammenfassung</a></li>
+      </ul>
+    </nav>
+
+    <section id="section1">
+      <h2>Was sind Document Fragments?</h2>
+      <p>
+        Document Fragments sind eine Möglichkeit, ein Dokument in kleinere,
+        handhabbare Teile zu unterteilen. In HTML und der Webentwicklung können
+        Anker dazu verwendet werden, auf bestimmte Teile eines Dokuments zu
+        verweisen. Ein "Fragment" bezieht sich auf den Teil einer Seite, zu dem
+        man direkt über eine URL mit einem Hashtag (#) springen kann. Wenn der
+        Benutzer auf einen solchen Link klickt, springt die Seite zu dem
+        entsprechenden Abschnitt des Dokuments.
+      </p>
+    </section>
+
+    <section id="section2">
+      <h2>Verwendung von Ankern</h2>
+      <p>
+        Ein Anker in HTML wird durch das Attribut <code>id</code> in einem
+        HTML-Element erstellt, und man kann mit einem Link, der auf diese ID
+        verweist, zu diesem Abschnitt springen. Zum Beispiel:
+      </p>
+      <pre><code>&lt;a href="#section2"&gt;Gehe zu Abschnitt 2&lt;/a&gt;</code></pre>
+      <p>
+        Wenn der Benutzer auf diesen Link klickt, scrollt die Seite automatisch
+        zu dem Abschnitt, der die entsprechende ID hat, in diesem Fall zu
+        <code>section2</code>.
+      </p>
+    </section>
+
+    <section id="section3">
+      <h2>Beispiel: Document Fragments</h2>
+      <p>
+        Hier ist ein praktisches Beispiel, wie Anker verwendet werden können, um
+        innerhalb einer Seite zu navigieren. Wenn du den folgenden Link klickst,
+        wirst du direkt zu diesem Abschnitt zurückgeleitet.
+      </p>
+      <p><a href="#section1">Zurück zu "Was sind Document Fragments?"</a></p>
+      <p>
+        Im echten Leben sind solche Links besonders nützlich für lange Seiten
+        mit viel Inhalt, wie z. B. Dokumentationen, Artikel oder FAQ-Seiten. Der
+        Benutzer kann schnell zu den Abschnitten springen, die für ihn
+        interessant sind, ohne durch die gesamte Seite scrollen zu müssen.
+      </p>
+    </section>
+
+    <section id="section4">
+      <h2>Zusammenfassung</h2>
+      <p>
+        Document Fragments und Anker sind essentielle Techniken in HTML, um
+        Benutzern das einfache Navigieren durch lange Inhalte zu ermöglichen.
+        Sie helfen, ein Dokument in handhabbare Teile zu unterteilen und bieten
+        eine bessere Benutzererfahrung, da Leser schnell zu den für sie
+        relevanten Informationen springen können.
+      </p>
+      <p>
+        Verwende das <code>id</code>-Attribut für jeden Abschnitt, und füge
+        Links mit dem <code>href</code>-Attribut hinzu, um zu diesen IDs zu
+        verweisen. So kannst du die Benutzerfreundlichkeit deiner Webseite
+        erhöhen.
+      </p>
+    </section>
+
+    <footer>
+      <p>Jens Reiner - Beispiel mittels ChatGPT erstellt</p>
+    </footer>
+  </body>
+</html>
