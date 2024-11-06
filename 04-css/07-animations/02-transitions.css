@@ -1,0 +1,52 @@
+/* Grundlegendes Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #0066cc;
+}
+
+.transition-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #0066cc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  transition: all 0.5s ease; /* Übergang für alle Eigenschaften */
+}
+
+/* Übergang 1: Farbe ändern */
+.color-change:hover {
+  background-color: #ff6600;
+  color: white;
+}
+
+/* Übergang 2: Größe ändern */
+.grow:hover {
+  transform: scale(1.2); /* Vergrößert die Box bei Hover */
+}
+
+/* Übergang 3: Drehen */
+.rotate-hover:hover {
+  transform: rotate(15deg); /* Dreht die Box leicht bei Hover */
+}
+
+/* Übergang 4: Schatten hinzufügen */
+.shadow-hover:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Fügt einen Schatten hinzu */
+}

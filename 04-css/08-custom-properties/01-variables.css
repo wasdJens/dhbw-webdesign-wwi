@@ -1,0 +1,6 @@
+/* Definiere globale Custom Properties */
+:root {
+  --primary-color: yellow;
+  --secondary-color: coral;
+  --font-size-large: 24px;
+}

@@ -1,0 +1,14 @@
+/* Importiere die Datei mit den Custom Properties */
+@import url('./01-variables.css');
+
+/* Verwende die Custom Properties */
+body {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: calc(var(--font-size-large) * 1.5);
+}

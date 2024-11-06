@@ -1,0 +1,28 @@
+/* Definiere die animierbare Custom Property */
+@property --bg-color {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #3498db;
+}
+
+/* Verwende die Custom Property als Hintergrundfarbe */
+body {
+  background-color: var(--bg-color);
+  transition: background-color 2s ease;
+}
+
+/* Ändere die Farbe beim Hover auf `body` */
+body:hover {
+  --bg-color: #e74c3c;
+}
+
+/* Stil für den Button */
+button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}

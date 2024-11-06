@@ -1,0 +1,15 @@
+.container {
+  container-type: inline-size;
+  container-name: my-container;
+}
+
+.child {
+  background-color: lightblue;
+}
+
+/* Container Query für `.child`, abhängig von der Breite des Containers */
+@container my-container (min-width: 400px) {
+  .child {
+    background-color: lightgreen;
+  }
+}

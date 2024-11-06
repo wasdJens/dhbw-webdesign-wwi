@@ -1,0 +1,41 @@
+/* Mobile-First Styling */
+body {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Desktop-Ansicht */
+@media (min-width: 64em) { /* 1024px */
+  body {
+      font-size: 1.2rem;
+  }
+}
+
+/* Nur für Tablets */
+@media (min-width: 48em) and (max-width: 64em) {
+  body {
+      background-color: #f0f8ff;
+  }
+}
+
+/* Querformat */
+@media (orientation: landscape) {
+  body {
+      background-color: #e0e0e0;
+  }
+}
+
+/* Hochformat */
+@media (orientation: portrait) {
+  body {
+      background-color: coral;
+  }
+}
+
+/* Darkmode */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #121212;
+      color: #ffffff;
+  }
+}

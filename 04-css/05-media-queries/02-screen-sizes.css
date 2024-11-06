@@ -1,0 +1,44 @@
+/* Grundlegendes Styling für alle Geräte */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 1.25rem; /* entspricht 20px */
+}
+
+h1 {
+  color: #0066cc;
+  font-size: 1.5rem; /* Grundgröße */
+}
+
+/* Beispiel 1: Bildschirmgrößen für Tablets und größere Geräte */
+@media (min-width: 48em) { /* entspricht 768px */
+  body {
+      background-color: #f0f8ff;
+  }
+  h1 {
+      font-size: 2rem; /* etwas größer auf Tablets */
+  }
+}
+
+/* Beispiel 2: Bildschirmgrößen für Desktops und größere Bildschirme */
+@media (min-width: 64em) { /* entspricht 1024px */
+  body {
+      background-color: #e6f7ff;
+  }
+  p {
+      font-size: 1.2rem; /* etwas größere Schrift für Lesbarkeit */
+      color: #005580;
+  }
+}
+
+/* Beispiel 3: Kleinstgeräte (z. B. Smartphones) */
+@media (max-width: 30em) { /* entspricht 480px */
+  h1 {
+      font-size: 1.25rem; /* kleinere Schrift für kleine Bildschirme */
+      color: #ff6600;
+  }
+  p {
+      font-size: 0.9rem;
+      color: #666;
+  }
+}

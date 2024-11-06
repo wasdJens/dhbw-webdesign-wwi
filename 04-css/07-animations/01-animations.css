@@ -1,0 +1,86 @@
+/* Grundlegendes Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #0066cc;
+}
+
+.animation-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #0066cc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Animation 1: Bounce */
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* Animation 2: Fade */
+@keyframes fade {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+.fade {
+  animation: fade 2s ease-in-out infinite;
+}
+
+/* Animation 3: Rotate */
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 3s linear infinite;
+}
+
+/* Animation 4: Scale */
+@keyframes scale {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+}
+
+.scale {
+  animation: scale 1.5s ease-in-out infinite;
+}
